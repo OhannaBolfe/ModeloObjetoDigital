@@ -1,0 +1,503 @@
+@charset "UTF-8";
+@import url(reset.css);
+@import url(colorfonts.css);
+
+:root {
+    /* Fontes */
+    --titulo: 'Barlow';
+    --citacao: 'Noto Serif';
+    --texto: 'Work Sans';
+    --ordinal: ;
+    --quimico: ;
+    --fonema: ;
+
+    --oedtitulo: ;
+    --oedtexto: ;
+    --oedcitacao: ;
+    --oedinstrucao: ;
+
+    /* Tamanhos */
+    --peso1: 1.8em;
+    --peso2: 1.7em;
+    --peso3: 1.6em;
+    --peso4: 1.5em;
+    --peso5: 1.4em;
+    --peso6: 1.3em;
+    --peso6: 1.2em;
+    --peso7: 1.1em;
+    --peso8: 0.9em;
+    --pesoPadrao: 1em;
+    --pesoMenor: 0.8em;
+    --pesoIntermediario: 0.9em;
+
+    /* Cores */
+    --corprof: #8a014c;
+    --preto_: #2B2E34;
+    --preto: #000;
+    --branco: #fff;
+    --cinza: #ececec;
+    --link: #00649c;
+    --manualu: #E4F2E7;
+
+    --azul1: #398CCB;
+    --azul2: #86C2EB;
+    --azul3: #BCDCF5;
+    --azul4: #DFEAF8;
+
+    --turquesa1: #00ACA9;
+    --turquesa2: #87CDD3;
+    --turquesa3: #BEE2E9;
+    --turquesa4: #E0F1F5;
+
+    --verde1: #4DB05B;
+    --verde2: #9BCEA4;
+    --verde3: #CCE4CE;
+    --verde4: #E1F0EB;
+
+    --citrico1: #94C23E;
+    --citrico2: #D0DE84;
+    --citrico3: #E4ECBC;
+    --citrico4: #ECF3DA;
+
+    --laranja1: #F07F3C;
+    --laranja2: #F7AE82;
+    --laranja3: #FCD7B8;
+    --laranja4: #FDE7DD;
+
+    --amarelo1: #FBB900;
+    --amarelo2: #FED27A;
+    --amarelo3: #FFE6AC;
+    --amarelo4: #FEEFDE;
+
+    --vermelho1: #ac2d31;
+    --vermelho2: #EDAAA0;
+    --vermelho3: #fce3df;
+    --vermelho4: #fff5f3;
+
+    --rosa1: #ED6D84;
+    --rosa2: #F39DB0;
+    --rosa3: #F8C7D0;
+    --rosa4: #FCE5E9;
+
+    --roxo1: #7263A9;
+    --roxo2: #A69DCD;
+    --roxo3: #D2CDE8;
+    --roxo4: #EDEBF7;
+
+    --roxoquente1: #b9348b;
+    --roxoquente2: #f2e1f0;
+
+    --lilas1: #7263A9;
+    --lilas2: #A69DCD;
+    --lilas3: #D2CDE8;
+    --lilas4: #EDEBF7;
+}
+
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--texto);
+    font-size: var(--pesoPadrao);
+    line-height: 1.5em;
+    overflow-x: hidden;
+    hyphens: none;
+}
+
+p {
+    hyphens: none !important;
+    line-height: 130%;
+    max-width: 100%;
+    font-size: 18px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    box-sizing: border-box;
+    margin-bottom: 2.5em;
+    page-break-before: always;
+    page-break-after: avoid;
+}
+
+section header {
+    padding: 15px 0 0px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+blockquote {
+    font-size: 1em;
+    max-width: 100%;
+}
+
+figure {
+    margin: 1em 0.5em;
+    display: table;
+}
+
+figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption.p4legenda {
+    display: table-caption;
+    caption-side: bottom;
+    hyphens: none;
+    font-family: var(--texto);
+    background: var(--roxoquente2);
+}
+
+p,
+ul li {
+    hyphens: none;
+}
+
+p {
+    max-width: 100%;
+    line-height: 130%;
+    hyphens: none !important;
+}
+
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+strong em {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*👉d3hyperlinkoed classe específica para aparência de urls en OEDs👈*/
+a.d3hyperlinkoed {
+    color: #053499;
+    font-size: var(--pesoPadrao);
+    text-decoration: underline;
+}
+
+a.d3hyperlinkoed:visited {
+    color: #4f0792;
+}
+
+a.d3hyperlinkoed:hover {
+    color: rgb(134, 0, 0);
+}
+
+.ocultatx,
+.ocultamn {
+    color: transparent;
+}
+
+.ocultamn {
+    font-size: 0.3em;
+}
+
+.ocultatx {
+    font-size: 0.9em;
+}
+
+.hifen_ano {
+    margin-left: -8px;
+}
+
+.url_para_encurtar {
+    word-break: break-all;
+}
+
+.bg_branco {
+    background: #fff;
+}
+
+/*👉CLASSES PARA DIAGRAMAR👈*/
+/* COLUNAS E ALINHAMENTO */
+.col2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col2c {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 16px;
+}
+
+.col2s {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 16px;
+}
+
+/* Alinhamento vertical */
+.coltop {
+    align-items: flex-start;
+}
+
+.colcenter {
+    align-items: center;
+}
+
+.colbottom {
+    align-items: flex-end;
+}
+
+/*👉Elementos gerais do OED👈*/
+
+.d3boxoed {
+    padding: 1em 0;
+}
+
+.d3topooed {
+    display: flex;
+    align-items: center;
+}
+
+.d3instrucaooed {
+    font-family: var(--oedinstrucao);
+    padding: 1em;
+    font-size: 0.9em;
+    line-height: 1.1em;
+    hyphens: none;
+}
+
+.d3tit1oed {
+    font-family: var(--titulo);
+    font-size: var(--peso2);
+    color: var(--preto);
+    border-top: 2px solid var(--roxoquente1);
+    border-left: 2px solid var(--roxoquente1);
+    border-right: 2px solid var(--roxoquente1);
+    background: var(--roxoquente2);
+    text-align: left;
+    border-radius: 0 10px 0 0;
+    padding: 0.5em 1em;
+    width: fit-content;
+    max-width: 50%;
+    line-height: 1em;
+
+}
+
+.d3tit2oed {
+    font-size: 1.3em;
+    font-family: var(--titulo);
+    margin: 1em 0 0.5em 0;
+    text-align: center;
+}
+
+.d3txtoed {
+    margin: 1em 0;
+    font-family: var(--texto);
+    text-indent: 1.5em;
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: var(--pesoPadrao);
+}
+
+.d3conclusaooed {
+    margin: 3em 0 0 0;
+}
+
+/* classe específica para texto em pop up de infográfico e mapa clicável */
+.d3txtoedmapitem {}
+
+.d3legendaoed {
+    margin: 0.5em 0;
+    font-family: var(--texto);
+}
+
+.d3txinstrucaooed {
+    margin: 0.5em 0 1em 0;
+    font-family: var(--texto);
+    text-align: left;
+    font-size: var(--pesoPadrao);
+    text-indent: 1.5em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.d3conteudooed {
+    padding: 1em 2em;
+    background: #fff;
+    border: 2px solid var(--roxoquente1);
+    border-radius: 0 10px 10px 10px;
+}
+
+.panorama {}
+
+.objeto {}
+
+.d3credito {
+    /*👉display: flex;👈*/
+    /*👉flex-direction: row-reverse;👈*/
+    margin: 0.5em 0 0 0;
+}
+
+/*👉classes adicionadas para OED vídeo e áudio👈*/
+.d3oedvideo,
+.d3oedaudio {
+    margin: 1em 0;
+}
+
+.d3rubricatranscricao {
+    font-weight: bold;
+    margin: 1em 0 0 0 !important;
+}
+
+.d3txtranscricao {
+    margin: 0.5em 0 0.5em 0;
+}
+
+/*👉fim classes adicionadas para OED video👈*/
+
+.d3descricaolongaoed {
+    border: 1px;
+    padding: 0.5em;
+    margin: 0 0 0.5em 0;
+    color: var(--preto);
+    border: 2px solid var(--roxoquente1);
+    /*👉background: var(--roxoquente2);👈*/
+    border-radius: 0 7px 7px 7px;
+}
+
+.d3descricaolongaoed:hover {
+    animation: 3s ease-in-out;
+    animation-delay: 1000ms;
+    border: 1px solid var(--roxoquente1);
+    box-shadow: 3px 3px 0 0 var(--roxoquente1);
+}
+
+.d3descricaolongaoed summary {
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0 0 0 2em;
+}
+
+/*👉Versão geral👈*/
+.d3descricaolongaoed summary::before {
+    background: url(../images/ico_acessibilidade.svg);
+    background-size: 100%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin: 0 0 0 -48px;
+    content: '';
+}
+
+.d3descricaolongaoed div {
+    text-align: justify;
+    padding: 1em;
+}
+
+.d3descricaolongaoed div p {
+    margin: 0.4em 0 0.4em 0;
+    text-indent: 0em;
+}
+
+.d3creditoimagemoed,
+.d3fontepesquisa {
+    font-size: 0.9em;
+    text-align: right;
+    margin: 0.5em 0 0.5em 0;
+}
+
+.d3btnvoltaroed {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1em 0;
+}
+
+.d3btnvoltaroed a {
+    padding: 0.5em 1em;
+    font-weight: bold;
+    font-family: var(--titulo);
+    color: var(--preto);
+    border: 2px solid var(--roxoquente1);
+    background: var(--roxoquente2);
+    border-radius: 0 7px 7px 7px;
+}
+
+.d3btnvoltaroed a:hover,
+.d3btnvoltaroed a:focus {
+    animation: 3s ease-in-out;
+    animation-delay: 1000ms;
+    border: 1px solid var(--roxoquente1);
+    box-shadow: 3px 3px 0 0 var(--roxoquente1);
+}
+
+video {
+    max-width: 100%;
+}
+
+.d3vinheta {
+    font-style: italic;
+    text-indent: 0em !important;
+    margin: 1em 0 !important;
+}
+
+/*👉 CLASSE PARA OCULTAR CONTEÚDO VISIVELMENTE, MAS MANTER ACESSÍVEL PARA LEITORES DE TELA 👈*/
+.sr_only {
+    clip-path: inset(50%);
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+/*MEDIA QUERY*/
+/*👉Versão Mobile Cel👈*/
+@media screen and (min-width: 300px) and (max-width: 700px) {
+    main {
+        margin: 1em;
+    }
+
+    .d3topooed {
+        display: block;
+    }
+
+    /* POSICIONAMENTO - COLUNAS */
+    .col2,
+    .col2c,
+    .col2s {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .d3tit1oed {
+        background-position-y: -20px;
+        max-width: 98%;
+    }
+}
+
+/*👉Versão Mobile tablet👈*/
+@media screen and (min-width: 720px) and (max-width: 1024px) {}
+
+/*👉Versão Desktop👈*/
+@media screen and (min-width: 1200px) {}
+
+/*👉Versão IMPRESSÃO👈*/
+@media print and (max-height: 280mm) {}
