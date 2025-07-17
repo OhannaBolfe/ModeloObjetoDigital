@@ -2,30 +2,22 @@
 @import url(reset.css);
 @import url(colorfonts.css);
 
+/* CSS Document */
 :root {
     /* Fontes */
-    --titulo: 'Barlow';
-    --citacao: 'Noto Serif';
-    --texto: 'Work Sans';
-    --ordinal: ;
-    --quimico: ;
-    --fonema: ;
-
-    --oedtitulo: ;
-    --oedtexto: ;
-    --oedcitacao: ;
-    --oedinstrucao: ;
+    --titulo: 'Barlow' ;
+    --citacao: 'Noto Serif' ;
+    --texto:  'Work Sans' ;
 
     /* Tamanhos */
-    --peso1: 1.8em;
-    --peso2: 1.7em;
-    --peso3: 1.6em;
-    --peso4: 1.5em;
-    --peso5: 1.4em;
-    --peso6: 1.3em;
-    --peso6: 1.2em;
-    --peso7: 1.1em;
-    --peso8: 0.9em;
+    --peso1: 1.75em;
+    --peso2: 1.65em;
+    --peso3: 1.55em;
+    --peso4: 1.45em;
+    --peso5: 1.35em;
+    --peso6: 1.25em;
+    --peso7: 1.05em;
+    --peso8: 0.85em;
     --pesoPadrao: 1em;
     --pesoMenor: 0.8em;
     --pesoIntermediario: 0.9em;
@@ -33,64 +25,51 @@
     /* Cores */
     --corprof: #8a014c;
     --preto_: #2B2E34;
-    --preto: #000;
+    --preto:#000;
     --branco: #fff;
-    --cinza: #ececec;
     --link: #00649c;
     --manualu: #E4F2E7;
 
-    --azul1: #398CCB;
-    --azul2: #86C2EB;
-    --azul3: #BCDCF5;
-    --azul4: #DFEAF8;
+    --azul1: #00aaca;
+    --azul2: #d5ecf4;
+    --azul3: #005b6c;
 
-    --turquesa1: #00ACA9;
-    --turquesa2: #87CDD3;
-    --turquesa3: #BEE2E9;
-    --turquesa4: #E0F1F5;
+    --amarelo1: #fed061;
+    --amarelo2: #fff1c4;
 
-    --verde1: #4DB05B;
-    --verde2: #9BCEA4;
-    --verde3: #CCE4CE;
-    --verde4: #E1F0EB;
-
-    --citrico1: #94C23E;
-    --citrico2: #D0DE84;
-    --citrico3: #E4ECBC;
-    --citrico4: #ECF3DA;
-
-    --laranja1: #F07F3C;
-    --laranja2: #F7AE82;
-    --laranja3: #FCD7B8;
-    --laranja4: #FDE7DD;
-
-    --amarelo1: #FBB900;
-    --amarelo2: #FED27A;
-    --amarelo3: #FFE6AC;
-    --amarelo4: #FEEFDE;
-
-    --vermelho1: #ac2d31;
-    --vermelho2: #EDAAA0;
-    --vermelho3: #fce3df;
-    --vermelho4: #fff5f3;
-
-    --rosa1: #ED6D84;
-    --rosa2: #F39DB0;
-    --rosa3: #F8C7D0;
-    --rosa4: #FCE5E9;
-
-    --roxo1: #7263A9;
-    --roxo2: #A69DCD;
-    --roxo3: #D2CDE8;
-    --roxo4: #EDEBF7;
+    --citrico1: #dce169;
+    --citrico2: #f8f4bd;
+    
+    --laranja1: #f3953f;
+    --laranja2: #feead3;
+    
+    --vermelho1: #e94f35;
+    --vermelho2: #fce4e0;
 
     --roxoquente1: #b9348b;
     --roxoquente2: #f2e1f0;
 
-    --lilas1: #7263A9;
-    --lilas2: #A69DCD;
-    --lilas3: #D2CDE8;
-    --lilas4: #EDEBF7;
+    --turquesa1: #15af97;
+    --turquesa2: #e0f0eb;
+    --turquesa3: #c0dfcd;
+    
+    --cinza: #d0d0d0;
+    --cinza15: #edebdd;
+    --cinza50: #9c9a83;
+
+    --unidade: #52ae32;
+    --dezena: #e7343f;
+    --centena: #008bd2;
+    --decimo: #f07e31;
+    --centesimo: #745ba3;
+    --milesimo: #00adba;
+    
+    --pinteamarelo: #ffdf30;
+    --pintevermelho: #ed6b62;
+    --pinteverde: #85be57;
+    --pinteazul: #78b7e5;
+    --pintelaranja: #f39655;
+    --pintemarrom: #c0987c;
 }
 
 /* CSS Document */
@@ -144,8 +123,7 @@ blockquote {
 }
 
 figure {
-    margin: 1em 0.5em;
-    display: table;
+    margin: 1em 0 0 0;
 }
 
 figure img {
@@ -154,12 +132,11 @@ figure img {
     height: auto;
 }
 
-figcaption.p4legenda {
-    display: table-caption;
-    caption-side: bottom;
-    hyphens: none;
-    font-family: var(--texto);
+.p4legenda {
     background: var(--roxoquente2);
+    font-family: var(--texto);
+    font-size: var(--pesoPadrao);
+    padding: 0.5em 1em;
 }
 
 p,
@@ -275,7 +252,7 @@ a.d3hyperlinkoed:hover {
 }
 
 .d3instrucaooed {
-    font-family: var(--oedinstrucao);
+    font-family: var(--texto);
     padding: 1em;
     font-size: 0.9em;
     line-height: 1.1em;
@@ -320,7 +297,10 @@ a.d3hyperlinkoed:hover {
 }
 
 /* classe específica para texto em pop up de infográfico e mapa clicável */
-.d3txtoedmapitem {}
+.d3txtoedmapitem {    
+    font-family: var(--texto);
+    font-size: var(--pesoPadrao);
+}
 
 .d3legendaoed {
     margin: 0.5em 0;
@@ -468,10 +448,15 @@ video {
 
 /*MEDIA QUERY*/
 /*👉Versão Mobile Cel👈*/
-@media screen and (min-width: 300px) and (max-width: 700px) {
+@media screen and (max-width: 800px) {
+    
     main {
-        margin: 1em;
+        margin: 0.5em;
     }
+
+    .d3conteudooed {
+        padding: 1em;
+      }
 
     .d3topooed {
         display: block;
@@ -489,8 +474,14 @@ video {
 
     .d3tit1oed {
         background-position-y: -20px;
-        max-width: 98%;
+        border-bottom: 2px solid var(--roxoquente1);
+        max-width: 97%;
     }
+
+    p.d3instrucaooed {
+        max-width: 97%;
+    }
+    
 }
 
 /*👉Versão Mobile tablet👈*/
