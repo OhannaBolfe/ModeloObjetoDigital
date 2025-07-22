@@ -1,0 +1,92 @@
+@charset "UTF-8";
+@import url(reset.css);
+
+@import url(styles_lt.css);
+@import url(styles_mp.css);
+@import url(styles_gab.css);
+@import url(styles_res.css);
+
+@import url(instrucoes.css);
+@import url(colorfonts.css);
+
+/* CSS Document */
+:root {
+    /* Fontes */
+    --titulo: 'Barlow' ;
+    --citacao: 'Noto Serif' ;
+    --texto:  'Work Sans' ;
+
+    /* Tamanhos */
+    --peso1: 1.75em;
+    --peso2: 1.65em;
+    --peso3: 1.55em;
+    --peso4: 1.45em;
+    --peso5: 1.35em;
+    --peso6: 1.25em;
+    --peso7: 1.05em;
+    --peso8: 0.85em;
+    --pesoPadrao: 1em;
+    --pesoMenor: 0.8em;
+    --pesoIntermediario: 0.9em;
+
+    /* Cores */
+    --corprof: #8a014c;
+    --preto_: #2B2E34;
+    --preto:#000;
+    --branco: #fff;
+    --link: #00649c;
+    --manualu: #E4F2E7;
+
+    --azul1: #00aaca;
+    --azul2: #d5ecf4;
+    --azul3: #005b6c;
+
+    --amarelo1: #fed061;
+    --amarelo2: #fff1c4;
+
+    --citrico1: #dce169;
+    --citrico2: #f8f4bd;
+    
+    --laranja1: #f3953f;
+    --laranja2: #feead3;
+    
+    --vermelho1: #e94f35;
+    --vermelho2: #fce4e0;
+
+    --roxoquente1: #b9348b;
+    --roxoquente2: #f2e1f0;
+
+    --turquesa1: #15af97;
+    --turquesa2: #e0f0eb;
+    --turquesa3: #c0dfcd;
+    
+    --cinza: #d0d0d0;
+    --cinza15: #edebdd;
+    --cinza50: #9c9a83;
+
+    --unidade: #52ae32;
+    --dezena: #e7343f;
+    --centena: #008bd2;
+    --decimo: #f07e31;
+    --centesimo: #745ba3;
+    --milesimo: #00adba;
+    
+    --pinteamarelo: #ffdf30;
+    --pintevermelho: #ed6b62;
+    --pinteverde: #85be57;
+    --pinteazul: #78b7e5;
+    --pintelaranja: #f39655;
+    --pintemarrom: #c0987c;
+}
+
+/*👉Versão Mobile*/
+@media screen and (max-width: 540px) {
+    :root {    
+        /* Tamanhos */
+        --peso1: 1.5em;
+        --peso2: 1.4em;
+        --peso3: 1.4em;
+        --peso4: 1.3em;
+        --peso5: 1.3em;
+    }
+}
