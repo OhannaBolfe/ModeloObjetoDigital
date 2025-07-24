@@ -1,0 +1,10 @@
+<svg id="legenda_pinte_amarelo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_417" data-name="Retângulo 417" width="40" height="40" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_3361" data-name="Grupo 3361" clip-path="url(#clip-path)">
+    <path id="Retângulo_416" data-name="Retângulo 416" d="M5.113,0H34.888A5.112,5.112,0,0,1,40,5.112V34.888A5.112,5.112,0,0,1,34.888,40H5.113A5.113,5.113,0,0,1,0,34.887V5.113A5.113,5.113,0,0,1,5.113,0Z" transform="translate(0)" fill="#ffb300"/>
+  </g>
+</svg>
