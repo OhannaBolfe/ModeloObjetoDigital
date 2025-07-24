@@ -332,10 +332,49 @@ p.d3instrucaooed {
 
 .objeto {}
 
+
 .d3credito {
-    /*👉display: flex;👈*/
-    /*👉flex-direction: row-reverse;👈*/
-    margin: 0.5em 0 0 0;
+    font-size: var(--pesoIntermediario);
+    border: 1px;
+    padding: 0.5em;
+    margin: 0 0 0.5em 0;
+    color: var(--preto);
+    background: var(--roxoquente2);
+    border-radius: 0 7px 7px 7px;
+}
+
+.d3credito p.d3txtoed {    
+    text-indent: 0;
+    line-height: 130%;
+}
+
+.d3credito summary::before {
+    position: absolute;
+    margin: 0 0 0 -35px;
+    content: '©';  
+    font-size: 1.5em;
+}
+
+.d3credito:hover {
+    animation: 3s ease-in-out;
+    animation-delay: 1000ms;
+    border: 1px solid var(--roxoquente1);
+}
+
+.d3credito summary {
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0 0 0 1.7em;
+}
+
+.d3credito div {
+    text-align: justify;
+    padding: 1em;
+}
+
+.d3credito div p {
+    margin: 0.4em 0 0.4em 0;
+    text-indent: 0em;
 }
 
 /*👉classes adicionadas para OED vídeo e áudio👈*/
@@ -351,6 +390,7 @@ p.d3instrucaooed {
 
 .d3txtranscricao {
     margin: 0.5em 0 0.5em 0;
+    font-size: var(--pesoPadrao);
 }
 
 /*👉fim classes adicionadas para OED video👈*/
